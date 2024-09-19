@@ -1,0 +1,231 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: 'Raleway';
+  /* font-size: small; */
+  line-height: 1.8em;
+  background-color: whitesmoke;
+  font-size: 12px;
+
+} 
+h2{
+  font-size: 20px;
+}
+h3{
+  font-size: 14px;
+}
+p{
+  font-size: 14px;
+}
+li{
+  font-size: 12px;
+}
+
+/**************** Header **********************/
+header {
+  padding: 1em;
+  text-align: center;
+  background-image: url('./img/fondo.jpg');
+  background-size: cover;
+  background-position: fixed;
+  color: rgb(0, 0, 0);
+}
+
+header section {
+  margin: 0 auto;
+  /* max-width: 640px; */
+}
+
+header p{
+  text-align: center;
+  /* margin: 50px; */
+
+}
+header img {
+  border-radius: 50%;
+  max-width: 150px;
+}
+
+header, main, footer {
+  margin: 0 auto;
+}
+
+/*****************Fin Header ********************/
+/**************** Boton Imprimir ****************/
+.btnimpr{
+  background-color: transparent;
+  color: white;
+  border: 3px groove black;
+  /* padding: 1px; */
+  font-size: 5px;
+  font-weight: bold;
+  /* margin: 20px; */
+}
+.btnimpr:hover{
+  cursor: pointer;
+  background-color: #2d9ac5;
+}
+.imgpdf{
+  width: 40px;
+  height: 40px;
+}
+/**************** Fin Boton Imprimir ****************/
+section{
+  margin: 1em;
+  padding: 1em;
+}
+.links{
+  
+}
+.fila {
+  display: flex;
+}
+
+.columna {
+  flex: 1;
+  padding: 10px;
+  padding: 0px;
+/* BORDE */
+  border: 3px solid #ABA7A7;
+  box-shadow: 0 0 10px #D3D3D3;
+  padding: 20px;
+/* fin BORDE */
+  box-sizing: border-box;
+}
+.experiencia{
+  font-size: 16px;
+
+}
+.experiencia li{
+  margin-left:1em;
+}
+.complementaria{
+  font-size: 16px;
+  line-height: 1.4em;
+  margin-top: 0px;
+  padding: 0px;
+}
+.complementaria li{
+  margin-left:3em;
+}
+/************** Logos Herramientas ***********/
+.herramientas{
+  /* BORDE */
+  background-image: url('./img/fondo.jpg');
+  background-size: cover;
+  background-position: fixed;
+  border: 3px solid #ABA7A7;
+  box-shadow: 0 0 10px #D3D3D3;
+  /* padding: 20px; */
+/* fin BORDE */
+}
+.lista-habilidades {
+  display: flex;
+  flex-wrap: wrap;
+  align-content: center;
+  margin: 10px;
+  
+}
+
+.logo {
+  text-align: center;
+  margin: 2px;
+
+}
+
+.logo img {
+  max-width: 100%;
+  height: auto;
+}
+
+.logo-name {
+  margin-top: 5px;
+}
+
+/************** FIN Logos Herramientas ***********/
+/*****************Seccion otros  ****************/
+.otros{
+  display: flex;
+  flex-wrap: wrap;
+  align-content: center;
+}
+.columna2{
+  flex: 1;
+  padding: 10px;
+  /* BORDE */
+  border: 3px solid #ABA7A7;
+  box-shadow: 0 0 10px #D3D3D3;
+  padding: 20px;
+/* fin BORDE */
+}
+/*****************FIn Seccion otros  ****************/
+
+
+/* Estilos del pie de página */
+footer {
+  background-color: #223f63;
+  color: #000000;
+  padding: 20px;
+  /* text-align: right;  */
+  bottom: 0;
+  width: 100%;
+} 
+.footer{
+  display: flex;
+}
+  @media only screen and (max-width: 576px) {
+     .columna-1{
+      display: none;
+     }
+  }
+  @media only screen and (min-width: 2px) {    
+    .columnaOculta{
+     display: none;
+    }
+ }
+
+.columna-1{
+  flex: 1;
+  margin-left: 10%;
+  font-size: 25px;
+}
+
+.columna-2{
+  flex: 3;
+  text-align: right;
+  margin-right: 40px;
+  font-size: 15px;
+}
+
+/*FIN Estilos del pie de página */
+@media screen and (max-width: 768px) {
+  header img {
+    max-width: 100px; /* Reducir el tamaño de la imagen del encabezado en dispositivos pequeños */
+  }
+
+  .columna {
+    padding: 5px; /* Reducir el espacio entre las columnas en dispositivos pequeños */
+  }
+
+  .logo-name {
+    font-size: 12px; /* Reducir el tamaño del nombre de las herramientas en dispositivos pequeños */
+  }
+}
+/* Estilos adicionales para mejorar la apariencia */
+
+a {
+  color: #2d9ac5;
+  text-decoration: none;
+  
+}
+
+a:hover {
+  text-decoration: underline;
+  font-weight: 600;
+  
+}
+
+
